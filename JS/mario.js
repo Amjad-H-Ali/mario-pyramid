@@ -1,6 +1,11 @@
 console.log('Mario');
 
-const input = prompt();
+let input;
+
+do { 
+	input = prompt();
+}
+while(input < 0 || input > 23 || isNaN(parseInt(input)) || isNaN(Number(input)) || parseInt(input) != input);
 
 
 // Generates Spaces
