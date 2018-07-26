@@ -30,10 +30,11 @@ const pyramid = (num) => {
 
 	for (let i = 1; i <= num; i ++) {
 
-		console.log(`${spaces(num - i)}#`);
+		console.log(`${spaces(num - i)}`,`${blocks(i)}`);
+
 
 	};
 };
 
 
-pyramid(10);
+pyramid(4);
