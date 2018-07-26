@@ -1,5 +1,8 @@
 console.log('Mario');
 
+const input = prompt();
+
+
 // Generates Spaces
 const spaces = (num) => {
 	let space = "";
@@ -25,9 +28,10 @@ const blocks = (num) => {
 	return blocks;
 };
 
-
+// Contructs Pyramids
 const pyramid = (num) => {
 
+	// Rows
 	for (let i = 1; i <= num; i ++) {
 
 		console.log(`${spaces(num - i)}`,`${blocks(i)}`,`${spaces(2)}`,`${blocks(i)}`);
@@ -36,4 +40,4 @@ const pyramid = (num) => {
 };
 
 
-pyramid(15);
+pyramid(input);
