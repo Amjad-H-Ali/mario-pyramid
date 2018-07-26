@@ -3,7 +3,7 @@ console.log('Mario');
 let input;
 
 do { 
-	input = prompt();
+	input = prompt("Height");
 }
 while(input < 0 || input > 23 || isNaN(parseInt(input)) || isNaN(Number(input)) || parseInt(input) != input);
 
