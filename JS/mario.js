@@ -7,12 +7,12 @@ const spaces = (num) => {
 	for (let i = 0; i < num; i++) {
 
 		space += " ";
-	}
+	};
 
 	return space;
 };
 
-console.log(`Hello,${spaces(5)}World!`);
+
 
 // Generates Blocks
 const blocks = (num) => {
@@ -20,9 +20,20 @@ const blocks = (num) => {
 
 	for (let i = 0; i < num; i ++) {
 		blocks += "#";
-	}
+	};
 
 	return blocks;
 };
 
-console.log(blocks(5));
+
+const pyramid = (num) => {
+
+	for (let i = 1; i <= num; i ++) {
+
+		console.log(`${spaces(num - i)}#`);
+
+	};
+};
+
+
+pyramid(10);
